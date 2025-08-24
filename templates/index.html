@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='estilos.css') }}">
+</head>
+<body>
+    <h1>MC VOLT&SECURITY 🚀</h1>
+    <p>Este es el inicio de la aplicación.</p>
+    <ul>
+        <li><a href="{{ url_for('home') }}">Inicio</a></li>
+        <li><a href="{{ url_for('about') }}">Acerca de</a></li>
+        <li><a href="{{ url_for('usuario', nombre='Mark') }}">Ruta dinámica: Usuario</a></li>
+    </ul>
+</body>
+</html>
