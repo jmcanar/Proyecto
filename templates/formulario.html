@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Registro de Clientes</h2>
+<form method="POST" action="/guardar">
+    <label>Nombre:</label><input type="text" name="nombre"><br>
+    <label>Email:</label><input type="email" name="email"><br>
+    <label>Segmento:</label><input type="text" name="segmento"><br>
+    <button type="submit">Guardar</button>
+</form>
+{% endblock %}
